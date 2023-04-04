@@ -33,8 +33,7 @@ You can use and customize the functions provided by the GUIModule.psm1 module to
 ## Usage
 Después de importar el módulo GUIModule, puede utilizar las funciones proporcionadas para crear y personalizar formularios y elementos de la GUI en sus scripts de PowerShell. A continuación, se muestra un ejemplo de cómo crear un formulario básico con un botón:
 
-powershell
-Copy code
+```powershell
 Import-Module GUIModule
 
 $form = New-ScriptForm -Text "Mi formulario" -Size (New-Object System.Drawing.Size(300, 200))
