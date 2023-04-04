@@ -39,54 +39,62 @@ function Add-ScriptCheckBox {
 }
 
 Export-ModuleMember -Function New-ScriptForm, Show-ScriptForm, Add-scriptLabel, Add-scriptButton, Add-scriptTextBox, Calculate-scriptFormSize
+
+Example of Usage with simple script
+
+function Generate-SecurePassword {
+    param (
+        [int] $Length
+    )
+
+    $chars = 'abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()'
+    $securePassword = -join ((1..$Length) | ForEach-Object { Get-Random -InputObject ($chars.ToCharArray()) })
+
+    return $securePassword
+}
+
+function Reset-UserPassword {
+    param (
+        [string] $Username
+    )
+
+    if ([string]::IsNullOrEmpty($Username)) {
+        [System.Windows.Forms.MessageBox]::Show("Please enter a valid username.", "Error", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+        return
+    }
+
+    $securePassword = Generate-SecurePassword -Length 24
+
+    # Reset User password
+    # Set-ADAccountPassword -Identity $Username -Reset -NewPassword (ConvertTo-SecureString -AsPlainText $securePassword -Force)
+
+    Write-Host "Password for $Username has been reset to $securePassword."
+    [System.Windows.Forms.MessageBox]::Show("Password for $Username has been reset successfully.", "Success", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+}
+
+$form = New-ScriptForm -Title "Reset Password" -Width 400 -Height 200
+
+Add-ScriptLabel -Form $form -Text "Username:" -Location (New-Object System.Drawing.Point(10, 20))
+$usernameTextBox = Add-scriptTextBox -Form $form -Location (New-Object System.Drawing.Point(10, 50)) -Size (New-Object System.Drawing.Size(350, 20))
+
+# Add new textbox
+Add-scriptLabel -Form $form -Text "Additional Info:" -Location (New-Object System.Drawing.Point(10, 80))
+$additionalInfoTextBox = Add-scriptTextBox -Form $form -Location (New-Object System.Drawing.Point(10, 110)) -Size (New-Object System.Drawing.Size(350, 20))
+
+Add-scriptButton -Form $form -Text "Reset Password" -Location (New-Object System.Drawing.Point(10, 150)) -OnClick {
+    Reset-UserPassword -Username $usernameTextBox.Text
+}
+
+Add-scriptButton -Form $form -Text "Cancel" -Location (New-Object System.Drawing.Point(110, 150)) -OnClick {
+    $form.Close()
+}
+
+$form.Size = Measure-scriptFormSize -Form $form
+
+Show-scriptForm -Form $form
 #>
 
 Install-Module PS2EXE -Scope CurrentUser
-
-### This function is in construction 
-
-<#function Create-Installer {
-    param (
-        [string] $ScriptPath,
-        [string] $OutputPath,
-        [string] $IconPath
-    )
-
-    if (-not (Test-Path $ScriptPath)) {
-        Write-Error "Script path '$ScriptPath' does not exist."
-        return
-    }
-
-    if (-not [System.IO.Path]::GetExtension($OutputPath) -eq ".exe") {
-        Write-Error "Output path '$OutputPath' must have a .exe extension."
-        return
-    }
-
-    if ($IconPath -and -not (Test-Path $IconPath)) {
-        Write-Error "Icon path '$IconPath' does not exist."
-        return
-    }
-
-    $params = @{
-        'InputFile'  = $ScriptPath
-        'OutputFile' = $OutputPath
-        'NoConsole'  = $true
-    }
-
-    if ($IconPath) {
-        $params['IconFile'] = $IconPath
-    }
-
-    try {
-        Import-Module PS2EXE
-        Invoke-PS2EXE @params
-    }
-    catch {
-        Write-Error "Error creating installer: $_"
-    }
-}#>
-
-##########################
 
 function New-ScriptForm {
     param (
