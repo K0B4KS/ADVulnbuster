@@ -84,6 +84,16 @@ $form.Size = Measure-scriptFormSize -Form $form
 
 Show-scriptForm -Form $form
 
-In this example, we use the GUIModule.psm1 module to create a form with a username text box, an additional information text box, and buttons for resetting the password and canceling the operation. The Reset-UserPassword function is called when the "Reset Password" button is clicked, and it uses the Generate-SecurePassword function to create a new secure password.
+In this example, we use the GUIModule.psm1 module to create a form with a username text box, an additional information text box, and buttons for resetting the password and canceling the operation. The `Reset-UserPassword` function is called when the "Reset Password" button is clicked, and it uses the `Generate-SecurePassword` function to create a new secure password.
 
 You can use and customize the functions provided by the GUIModule.psm1 module to create a variety of GUI forms and elements to suit your specific requirements.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or comments about the GUIModule.psm1 module, please contact [Your Name](mailto:your.email@example.com).
+
+
