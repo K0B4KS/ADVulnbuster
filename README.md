@@ -84,5 +84,5 @@ $form.Size = Measure-scriptFormSize -Form $form
 
 Show-scriptForm -Form $form
 
-# Example code using GUIModule.psm1
+
 
