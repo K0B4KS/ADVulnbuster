@@ -37,6 +37,5 @@ The GUIModule.psm1 module provides a set of functions that allow you to easily c
 ```powershell
 Import-Module GUIModule
 
-## License
 
 
