@@ -85,11 +85,4 @@ $form.Size = Measure-scriptFormSize -Form $form
 Show-scriptForm -Form $form
 
 # Example code using GUIModule.psm1
-You can use and customize the functions provided by the GUIModule.psm1 module to create a variety of GUI forms and elements to suit your specific requirements.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For questions or comments about the GUIModule.psm1 module, please contact Your Name.
 
