@@ -1,28 +1,28 @@
 # Powershell
 # GUIModule.psm1
 
-## Descripción del proyecto
+## Project description
 
-GUIModule.psm1 es un módulo de PowerShell que proporciona funciones para crear fácilmente formularios y elementos de interfaz gráfica de usuario (GUI) para scripts de PowerShell. Esta herramienta es útil para aquellos que deseen crear aplicaciones y herramientas basadas en PowerShell con una interfaz gráfica amigable para el usuario.
+GUIModule.psm1 is a PowerShell module that provides functions for easily creating forms and graphical user interface (GUI) elements for PowerShell scripts. This tool is useful for those who want to create applications and tools based on PowerShell with a user-friendly graphical interface.
 
-## Tabla de contenidos
+## Table of contents
 
-1. [Requisitos previos](#requisitos-previos)
-2. [Instalación](#instalación)
-3. [Uso](#uso)
-4. [Licencia](#licencia)
-5. [Contacto](#contacto)
+1. [Prerequisites](#prerequsites)
+2. [Installation](#installation)
+3. [Use](#use)
+4. [License](#license)
+5. [Contact](#contact)
 
-## Requisitos previos
+## Prerequisites
 
-- PowerShell 5.1 o superior
-- Módulo ActiveDirectory para PowerShell (si se utiliza en un entorno de Active Directory)
+- PowerShell 5.1 or higher
+- ActiveDirectory module for PowerShell (if used in an Active Directory environment)
 
-## Instalación
+## Installation
 
-1. Descargue el archivo GUIModule.psm1 en su equipo local.
-2. Copie el archivo GUIModule.psm1 en una de las rutas incluidas en la variable `$env:PSModulePath`, por ejemplo, `%USERPROFILE%\Documents\WindowsPowerShell\Modules\GUIModule`.
-3. Abra una nueva ventana de PowerShell y ejecute el siguiente comando para importar el módulo:
+1. Download the GUIModule.psm1 file to your local computer.
+2. Copy the GUIModule.psm1 file to one of the paths included in the $env:PSModulePath variable, for example, %USERPROFILE%\Documents\WindowsPowerShell\Modules\GUIModule.
+3. Open a new PowerShell window and run the following command to import the module:
 
    ```powershell
    Import-Module GUIModule
