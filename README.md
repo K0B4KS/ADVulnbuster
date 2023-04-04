@@ -1,3 +1,12 @@
+<style>
+  pre {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
+
 # Powershell
 # GUIModule.psm1
 
