@@ -40,5 +40,8 @@ Refer to the comments and examples within the GUIModule.psm1 script for more det
 
 ## License
 
+This project is licensed under the MIT License.
+
 ## Contact
 
+If you have any questions or suggestions, please feel free to open an issue on the project's GitHub repository (if available) or contact the project maintainer directly.
