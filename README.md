@@ -1,6 +1,6 @@
 
 # Powershell
-# GUIModule.psm1
+# GUIModule_v1.0.psm1
 
 ## Project description
 
