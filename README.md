@@ -35,7 +35,8 @@ You can use and customize the functions provided by the GUIModule.psm1 module to
 The GUIModule.psm1 module provides a set of functions that allow you to easily create and customize GUI forms and elements in your PowerShell scripts. Below is an example script that demonstrates how to create a form to reset a user's password using functions from the GUIModule.psm1 module.
 
 ```powershell
-# Place your example code here
+Import-Module GUIModule
 
+## License
 
 
