@@ -35,8 +35,11 @@ Después de importar el módulo GUIModule, puede utilizar las funciones proporci
 
 ```powershell
 Import-Module GUIModule
+```powershell
 $form = New-ScriptForm -Text "Mi formulario" -Size (New-Object System.Drawing.Size(300, 200))
+```powershell
 $button = Add-ScriptButton -Form $form -Text "Mi botón" -Location (New-Object System.Drawing.Point(100, 100))
+```powershell
 Show-ScriptForm -Form $form
 
 Consulte la documentación de cada función dentro del módulo GUIModule.psm1 para obtener más información sobre cómo utilizar y personalizar los elementos de la GUI.
