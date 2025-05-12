@@ -1,11 +1,11 @@
 
 # Powershell
-# GUIModule_v1.0.psm1
+# AD VULNBUSTER
 
 ## Project description
 
-GUIModule_v1.0.psm1 is a first version of PowerShell module that provides functions for easily creating forms and graphical user interface (GUI) elements for PowerShell scripts. This tool is useful for those who want to create applications and tools based on PowerShell with a user-friendly graphical interface. In this example, we use the GUIModule.psm1 module to create a form with a username text box, an additional information text box, and buttons for resetting the password and canceling the operation. The Reset-UserPassword function is called when the "Reset Password" button is clicked, and it uses the Generate-SecurePassword function to create a new secure password.
 
+AD VulnBuster is a powerful Active Directory auditing tool designed to uncover common misconfigurations and privilege escalation vectors. It detects environments vulnerable to DCSync attacks, forged ticket persistence (Golden, Silver, Diamond Tickets), PKI misconfigurations, risky ACLs, and weak Kerberos settings such as Kerberoasting and AS-REP Roasting. The tool also analyzes service accounts, GPO permissions, Resource-Based Constrained Delegation (RBCD), and provides detailed escalation path mapping, delivering a comprehensive security report of the Active Directory environment.
 You can use and customize the functions provided by the GUIModule.psm1 module to create a variety of GUI forms and elements to suit your specific requirements.
 
 ## Table of contents
@@ -23,20 +23,13 @@ You can use and customize the functions provided by the GUIModule.psm1 module to
 
 ## Installation
 
-1. Download the GUIModule.psm1 file to your local computer.
-2. Copy the GUIModule.psm1 file to one of the paths included in the $env:PSModulePath variable, for example, %USERPROFILE%\Documents\WindowsPowerShell\Modules\GUIModule.
-3. Open a new PowerShell window and run the following command to import the module:
+1. Download the zip to your personal computer.
+2. Extract and copy advulnbuster.ps1 to Domain controller. 
 
-   ```powershell
-   Import-Module GUIModule
 
 ## Usage
 
-Create a new form using the New-ScriptForm function.
-Add controls to the form using the Add-* functions (e.g., Add-ScriptButton, Add-ScriptLabel, Add-ScriptTextBox, etc.).
-Display the form using the Show-ScriptForm function.
-Use the provided calculation functions to adjust the form's size, if needed.
-Refer to the comments and examples within the GUIModule.psm1 script for more detailed usage instructions and examples.
+Run with powershell. 
 
 ## License
 
