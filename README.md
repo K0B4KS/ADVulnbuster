@@ -40,8 +40,11 @@ Run with powershell.
 ##Features
 - DCsync Menu -
 ![image](https://github.com/user-attachments/assets/911054ac-feb4-4a77-b6d3-64eea58631f6)
+
 . Check potential dangerous Dcsync rights in Active Directory root
+
 . Remove Dcsync Righs
+
 . Restore Dcsync Righs
 
 
