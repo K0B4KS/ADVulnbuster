@@ -38,7 +38,7 @@ Run with powershell.
 ![image](https://github.com/user-attachments/assets/4b8cabf8-5d52-469a-aa29-c37bf80b0015)
 
 ##Features
-- DCsync Menu -
+
 ![image](https://github.com/user-attachments/assets/911054ac-feb4-4a77-b6d3-64eea58631f6)
 
 . Check potential dangerous Dcsync rights in Active Directory root
@@ -46,6 +46,44 @@ Run with powershell.
 . Remove Dcsync Righs
 
 . Restore Dcsync Righs
+
+![image](https://github.com/user-attachments/assets/3ab7dc67-5bb4-43b7-888a-71b074331afe)
+
+Find Kerberos attack vectors:
+. GoldenTicket
+. SilverTicket
+. DiamondTicket
+
+![image](https://github.com/user-attachments/assets/b8a64f81-f1c6-4584-9d53-5a2e11c0fcc9)
+
+Reporting and Auditing section.
+
+. ACL Report: Extract complete ACL report classfied by critical assets
+
+![image](https://github.com/user-attachments/assets/ce16ac04-8cf6-4f0d-a325-833f12b67414)
+
+
+. PKI Audit Report: ESC1...ESC15 and Miss configurations 
+
+![image](https://github.com/user-attachments/assets/b8de3c1b-0b00-46ba-a707-f2c38b6098b7)
+
+. Complete Active Directory Auditing report and export to hmtl format
+
+![image](https://github.com/user-attachments/assets/fc3a024e-2ac8-459e-863e-0f6b9db1638a)
+
+![image](https://github.com/user-attachments/assets/e688e9a0-49e7-45ce-924e-ffb03385b917)
+
+
+. Find Escalation Paths
+
+![image](https://github.com/user-attachments/assets/b0b39564-3d96-481b-b991-86d0b5875c63)
+
+
+. Analyze PKI vulnerabilities in templates 
+
+![image](https://github.com/user-attachments/assets/6c67a974-997e-4a26-95d1-568fceae7b18)
+
+
 
 
 ## License
