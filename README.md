@@ -31,7 +31,7 @@ You can use and customize the functions provided by the GUIModule.psm1 module to
 3. The file shound localted in c:\adaudit\advulnbuster 
 
 
-## Usage
+## Use
 
 Run with powershell. 
 
