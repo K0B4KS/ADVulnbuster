@@ -8,7 +8,7 @@
 ## Project description
 
 AD VulnBuster is a powerful Active Directory auditing tool designed to uncover common misconfigurations and privilege escalation vectors. It detects environments vulnerable to DCSync attacks, forged ticket persistence (Golden, Silver, Diamond Tickets), PKI misconfigurations, risky ACLs, and weak Kerberos settings such as Kerberoasting and AS-REP Roasting. The tool also analyzes service accounts, GPO permissions, Resource-Based Constrained Delegation (RBCD), and provides detailed escalation path mapping, delivering a comprehensive security report of the Active Directory environment.
-You can use and customize the functions provided by the GUIModule.psm1 module to create a variety of GUI forms and elements to suit your specific requirements.
+
 
 ## Table of contents
 
